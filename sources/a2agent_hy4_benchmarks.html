@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tencent Hy4 Benchmarks: What the Charts Actually Show - A2Agent</title>
+    <meta name="description" content="Tencent released Hy4 on November 4. Its charts show big gains over the August preview on agent tasks, a near-even split with Kimi K3.1 Pro among open models, and a wide gap to Claude Opus 5.5 and GPT-6.1 Sol on hard math and long coding. Here&#39;s how to read the numbers, the footnotes and the price." />
+    <meta name="keywords" content="models, benchmarks" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="A2Agent" />
+    <meta property="og:title" content="Tencent Hy4 Benchmarks: What the Charts Actually Show" />
+    <meta property="og:description" content="Tencent released Hy4 on November 4. Its charts show big gains over the August preview on agent tasks, a near-even split with Kimi K3.1 Pro among open models, and a wide gap to Claude Opus 5.5 and GPT-6.1 Sol on hard math and long coding. Here&#39;s how to read the numbers, the footnotes and the price." />
+    <meta property="og:image" content="https://a2agent.me/images/social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A2Agent affordable LLM API gateway" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tencent Hy4 Benchmarks: What the Charts Actually Show" />
+    <meta name="twitter:description" content="Tencent released Hy4 on November 4. Its charts show big gains over the August preview on agent tasks, a near-even split with Kimi K3.1 Pro among open models, and a wide gap to Claude Opus 5.5 and GPT-6.1 Sol on hard math and long coding. Here&#39;s how to read the numbers, the footnotes and the price." />
+    <meta name="twitter:image" content="https://a2agent.me/images/social-card.png" />
+    <meta name="twitter:image:alt" content="A2Agent affordable LLM API gateway" />
+    <script type="module" crossorigin src="/assets/index-HdkNZ300.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-vue-wEzm46nw.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-i18n-BYXAOV2y.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-misc-fR9xGyMl.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-ui-Cb7oa979.js">
+    <link rel="stylesheet" crossorigin href="/assets/vendor-misc-C_AElKid.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-BJ_9Dut0.css">
+  <script nonce="VBPrgRsKKngpIat4neWPgQ==">window.__APP_CONFIG__={"registration_enabled":true,"email_registration_enabled":false,"email_verify_enabled":true,"registration_email_suffix_whitelist":["@gmail.com","@qq.com","@outlook.com","@yahoo.com","@aol.com"],"promo_code_enabled":true,"password_reset_enabled":true,"invitation_code_enabled":false,"totp_enabled":false,"turnstile_enabled":true,"turnstile_site_key":"0x4AAAAAAFUiBgsz4NFUk0SO","image_captcha_enabled":true,"site_name":"A2Agent","site_logo":"/api/v1/settings/site-logo?v=84849550ef7d0cb4","site_subtitle":"Cheapest AI Model API Gateway","api_base_url":"https://api.a2agent.me","contact_info":"","doc_url":"https://docs.a2agent.me/","home_content":"","home_hero_tagline":"Up to 50% off AI","home_announce_text":"🎁 DeepSeek-V4.1-Flash-1017 is now available on a2agent.  · Top up $10, get $10 free · New users only","hide_ccs_import_button":false,"purchase_subscription_enabled":false,"purchase_subscription_url":"","table_default_page_size":20,"table_page_size_options":[10,20,50],"custom_menu_items":[],"custom_endpoints":[{"name":"OpenAI Compatible","endpoint":"https://api.a2agent.me/v1","description":"OpenAI format (/v1/chat/completions). Use as base_url in OpenAI SDK, Cursor, Cline, etc."},{"name":"Anthropic Compatible","endpoint":"https://api.a2agent.me","description":"Anthropic Messages format (/v1/messages). Use as ANTHROPIC_BASE_URL for Claude Code or the Anthropic SDK."}],"backend_mode_enabled":false,"payment_enabled":true,"balance_low_notify_enabled":false,"account_quota_notify_enabled":true,"balance_low_notify_threshold":0,"default_balance":2,"balance_low_notify_recharge_url":"https://a2agent.me","channel_monitor_enabled":true,"channel_monitor_default_interval_seconds":60,"available_channels_enabled":false,"affiliate_enabled":true,"subscription_enabled":false,"affiliate_rebate_rate":5,"oauth_providers":[{"provider_key":"github","name":"GitHub"},{"provider_key":"google","name":"Google"}]};</script><link rel="canonical" href="https://a2agent.me/blog/tencent-hy4-benchmarks" /><meta property="og:url" content="https://a2agent.me/blog/tencent-hy4-benchmarks" /><meta property="article:published_time" content="2026-11-04T00:00:00Z" /><meta property="article:author" content="A2Agent Team" /><meta property="article:tag" content="models" /><meta property="article:tag" content="benchmarks" /><script type="application/ld+json" nonce="VBPrgRsKKngpIat4neWPgQ==">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","author":{"@type":"Person","name":"A2Agent Team"},"datePublished":"2026-11-04T00:00:00Z","description":"Tencent released Hy4 on November 4. Its charts show big gains over the August preview on agent tasks, a near-even split with Kimi K3.1 Pro among open models, and a wide gap to Claude Opus 5.5 and GPT-6.1 Sol on hard math and long coding. Here's how to read the numbers, the footnotes and the price.","headline":"Tencent Hy4 Benchmarks: What the Charts Actually Show","keywords":"models, benchmarks","mainEntityOfPage":{"@id":"https://a2agent.me/blog/tencent-hy4-benchmarks","@type":"WebPage"},"publisher":{"@type":"Organization","name":"A2Agent"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://a2agent.me/","name":"Home","position":1},{"@type":"ListItem","item":"https://a2agent.me/blog","name":"Blog","position":2},{"@type":"ListItem","item":"https://a2agent.me/blog/tencent-hy4-benchmarks","name":"Tencent Hy4 Benchmarks: What the Charts Actually Show","position":3}]}]}</script><script nonce="VBPrgRsKKngpIat4neWPgQ==">window.__A2_PAGE_STATE__={"blogPost":{"slug":"tencent-hy4-benchmarks","title":"Tencent Hy4 Benchmarks: What the Charts Actually Show","date":"2026-11-04T00:00:00Z","author":"A2Agent Team","tags":["models","benchmarks"],"excerpt":"Tencent released Hy4 on November 4. Its charts show big gains over the August preview on agent tasks, a near-even split with Kimi K3.1 Pro among open models, and a wide gap to Claude Opus 5.5 and GPT-6.1 Sol on hard math and long coding. Here's how to read the numbers, the footnotes and the price.","content":"Tencent released Hy4 on November 4, 2026, two months after the Hy4 preview it open-sourced in late August. The announcement calls it the strongest open-source Hy model yet and comes with a lot of charts. They show a big improvement on agent work over the preview. Among open models, Hy4 trades wins with Kimi K3.1 Pro, and on a few kinds of task it's still far behind the closed frontier.\n\nPlenty of developers were already using the preview. In the week through October 27, Hunyuan 4 preview was the fifth most-used model on OpenRouter, with 8.97 trillion tokens.\n\n## No parameter count this time\n\nThe Hy4 release post doesn't give a parameter count, an architecture or a context window. It says Hy4 \"substantially scales up both pre-training and post-training\" over the preview, adds image understanding, and supports computer use in both command-line and graphical environments for the first time.\n\nFor reference, the preview was a 770B mixture-of-experts model with 49B active parameters per token and a 1M-token context window, released under Apache 2.0. Tencent hasn't said whether the final model keeps that design.\n\n## The headline chart\n\n![Hy4 against GLM 5.3, DeepSeek-V4.1-Flash-1017, Kimi K3.1 Pro, Claude Opus 5.5 and GPT 6.1 Sol across twelve benchmarks, including ProgramBench, FrontierCode 2.0, Terminal Bench 4.0, AutomationBench, E-Bench, OSWorld 2.1 and TenureTrail](/blog-assets/tencent-hy4-benchmarks-headline.jpg)\n\nThe first chart compares Hy4 (the blue bar) with three open models, GLM 5.3, DeepSeek-V4.1-Flash-1017 and Kimi K3.1 Pro, and two closed ones, Claude Opus 5.5 and GPT 6.1 Sol, on twelve benchmarks. A dashed line inside the blue bar marks the preview's score.\n\nAgainst the other open models, Hy4 leads on six panels: ProgramBench, FrontierCode 2.0, 3DArena-Modeling, E-Bench 2.0, Hy-BrowseComp 2.0 and TenureTrail. Kimi K3.1 Pro beats it on the other six, and by a lot on some of them. On Terminal Bench 4.0 Kimi scores 66.8 to Hy4's 44.4, on AutomationBench 65.6 to 56.2, and on Terminal Bench Science 41.7 to 19.8. On Terminal Bench 4.0 and AutomationBench, Kimi has the highest bar in the whole chart, above Claude Opus 5.5.\n\nAgainst DeepSeek and GLM, Hy4 wins all twelve panels. So \"among the strongest open-source models\" is fair, with Kimi sharing the top spot.\n\nBenchmarks with an asterisk in this chart were run for the first time at release, so they have no preview score, and any claim of improvement has to come from the other rows.\n\n## Preview to release: where the gains are\n\n![The Hy4 appendix benchmark table, with Hy4 preview, Hy4, GLM-5.3, DeepSeek-V4.1-Flash-1017, Kimi K3.1 Pro, GPT-6.1 Sol and Claude Opus 5.5 across agentic coding, search, working agent, STEM, research, computer use and multimodal benchmarks](/blog-assets/tencent-hy4-benchmarks-appendix.jpg)\n\nThe appendix table is the most useful part of the post, because it puts Hy4 next to its own preview. The biggest jumps are all in agent work:\n\n| Benchmark | Hy4 preview | Hy4 | Change |\n|---|---|---|---|\n| WebCraftBench (internal) | 52.7 | 78.9 | +26.2 |\n| Hy-Backend 3.0 (internal) | 23.3 | 45.1 | +21.8 |\n| APEX-Agents v1.1 (pass@1) | 53.9 | 75.2 | +21.3 |\n| AutomationBench v1.0.6 | 36.3 | 56.2 | +19.9 |\n| Terminal-Bench 4.0 | 26.3 | 44.4 | +18.1 |\n| Hy-CompanyBench 2.0 (internal) | 62.4 | 78.8 | +16.4 |\n| Foundation Model Bench (internal) | 13.6 | 28.1 | +14.5 |\n| Hy-LifeSearch (internal) | 45.9 | 60.2 | +14.3 |\n| 3DArena-Modeling (internal) | 23.4 | 37.1 | +13.7 |\n| HLE-Full (with tools) | 57.3 | 59.1 | +1.8 |\n\nBuilding websites, writing backends, running automation and working in a terminal all require a model to plan, act and check its own work across many steps, and that's where most of the extra post-training went. Reasoning scores barely moved: Hy-FrontierMath T5 went from 7.8 to 13.0, and HLE from 57.3 to 59.1, though the preview's HLE score was measured on the text-only subset, so even that small change isn't a clean comparison. Tencent is selling Hy4 as a model that gets work done, and the numbers match that pitch.\n\nThe vision rows have no preview column, because the preview couldn't see images. Hy4 scores 78.6 on MMMU-Pro and 55.4 on ZeroBench-main (with tools, pass@5). On Tencent's BuddyVQA Atlas it scores 81.0 with tools and 55.6 without. That 25-point gap suggests much of Hy4's visual skill comes from using tools to zoom, crop and look again, more than from reading the image in one pass.\n\n## The gap chart\n\n![Hy4 against the proprietary frontier on four internal benchmarks: Hy-FrontierMath T5 13.0 vs 97.5 for GPT 6.1 Sol and 91.3 for Claude Opus 5.5; Goal2Repo 23.2 vs 58.0 and 74.0; Foundation Model Bench 28.1 vs 41.3 and 55.4; BuddyVQA Atlas without tools 55.6 vs 72.0 and 75.3](/blog-assets/tencent-hy4-benchmarks-frontier-gap.jpg)\n\nHalfway through, Tencent publishes a chart where its own model looks small, which launch posts rarely do. On Hy-FrontierMath T5, Hy4 scores 13.0, GPT 6.1 Sol 97.5 and Claude Opus 5.5 91.3. On Goal2Repo, where an agent has to build a repository from a spec against a hidden test suite, Hy4 reaches 23.2 against Opus's 74.0. On BuddyVQA Atlas without tools it's 55.6 against 75.3.\n\nTencent names four areas where the gap is concentrated: research-level math, long-horizon coding, a model improving other models, and hard visual question answering. If your workload falls in one of those, this chart matters more than the twelve-panel one above it. The other open models land in the same range: Kimi K3.1 Pro scores 14.8 on FrontierMath T5 and 21.0 on Goal2Repo, and DeepSeek 8.0 and 20.3.\n\n## Read the footnotes\n\nThe appendix notes say a lot about what each score is worth:\n\n- Every model ran at its highest reasoning setting, so expect lower scores at default settings.\n- GPT models ran in Codex and the others in Claude Code, at pinned versions. Each score measures a model and a harness together.\n- Terminal-Bench 4.0 allowed up to 500 turns and a 13-hour timeout per trial, with 16 CPUs and 32 GB of RAM. Most production setups give an agent far less.\n- SWE-Marathon used twice the official agent timeout, and each task was repeated until Tencent had eight valid scores from successful runs.\n- Claude Opus 5.5 hit content filter blocks on 41 ProgramBench tasks, so its score there partly reflects refusals.\n- Many competitor scores in the table are Tencent's own runs, marked with an asterisk, and some rows show both the vendor's number and Tencent's.\n- About a third of the rows are Tencent's internal benchmarks, such as Hy-CompanyBench, E-Bench, TenureTrail and Goal2Repo, which no one outside Tencent can audit.\n\nThe numbers are still useful, as long as you read them as upper bounds measured under generous conditions.\n\n## Results from real work\n\nSome of the more convincing figures in the post aren't benchmarks:\n\n- Finance: 213 finance professionals graded 579 real financial tasks. Hy4 scored 3.04, DeepSeek-V4.1-Flash-1017 2.97, and Kimi K3.1 Pro and GLM-5.3 tied at 2.68. The margin is small, but the graders are experts judging real work.\n- Hallucination: down from 15.76% in the preview to 5.45%, with speculative errors down from 23.1% to 5.6%. For office and finance work that's the difference between a draft you check line by line and one you can spot-check.\n- Games: up 19.1% on GameDev and 9.8% on GameLogic over the preview, with Tencent's game studio developers helping build the training data and tests.\n- Third-party agents: Manus reports about 97% task completion on creating and editing documents. WorkBuddy reports an average score of 83.18 and a 96.15% pass rate, first among Chinese models in 9 of 12 scenarios.\n\nExpert grading and product data are harder to game than public leaderboards, and they're closer to what buyers want to know. They're also reported by Tencent and its partners.\n\n## Price\n\n| Per 1M tokens | Cached input | Input | Output |\n|---|---|---|---|\n| Hy4 | $0.042 | $0.834 | $2.501 |\n\nThe price is the same as the preview's. Cached input costs about a twentieth of regular input, a discount built for agent workloads that resend the same long prompt, conversation or codebase on every step. Since the price didn't change and the scores went up a lot, Hy4 gives you much more per dollar than the preview did.\n\nFor comparison, Hy4 sits between Mistral Large 4 ($0.70 / $2.10) and Kimi K3.1 Pro ($2.00 / $10.00) on list price. Tencent also says a cheaper, faster Hy4 Flash is coming.\n\nHy4 is available through Tencent Cloud, OpenRouter, CodeBuddy, WorkBuddy, Yuanbao and ima. Tencent says it will open-source the weights with vLLM and SGLang support and publish a system card, but neither is out yet.\n\n## Safety\n\nTencent reports safety with numbers too. On its Hy-BioExperimentBench, Hy4 scores 30.4 out of 100 on open-ended experiment design, which Tencent says is well below its high-risk threshold. Its review of reasoning traces found the model knows biology but can't reliably turn that knowledge into usable lab protocols. Cyber training data was limited to defensive material such as proof-of-concept generation and patching, and red-team reviews with Tencent's Xuanwu Lab and Keen Security Lab found no higher offensive risk. Tencent sets its own threshold, but a published score still tells you more than calling the model \"safe\".\n\n## What it adds up to\n\nHy4 does well across a wide range of agent work. It's ahead of DeepSeek and GLM on all twelve headline panels and roughly even with Kimi K3.1 Pro, which leads on terminal work and automation. The gains over the preview went into finishing long tasks and making fewer things up, while raw reasoning barely changed. Tencent's own gap chart shows how far open models still are from Claude Opus 5.5 and GPT 6.1 Sol on research math and repository-scale coding.\n\nOnce the weights and system card are out, independent testers can check these numbers. Until then, run Hy4 against Kimi K3.1 Pro and DeepSeek V4.1 Flash on your own tasks before choosing.\n\n## Compare open models on A2Agent\n\nA2Agent gives you DeepSeek, GLM, Kimi, MiniMax, Qwen and other models behind one API key, with OpenAI-compatible and Anthropic-compatible endpoints, so you can run the same tasks across them and compare cost per finished task. See the [Models](/models) page for current availability and prices. New accounts get $5 in free credit.\n\n## Sources\n\n- [Introducing Hy4](https://hy.tencent.ai/research/hy4?langVersion=en) (Tencent Hy, November 4, 2026; all benchmark figures, evaluation notes, pricing and product results, and the three charts)\n- [Tencent Hunyuan Hy4: specs, benchmarks, and pricing explained](https://www.eesel.ai/blog/tencent-hy4) (eesel AI, Hy4 preview specs)\n- [LLM Rankings](https://openrouter.ai/rankings) (OpenRouter, week through October 27, 2026)"},"blogRelated":[{"slug":"mistral-large-4","title":"Mistral Large 4: Specs, Benchmarks, Pricing and Open Weights","date":"2026-11-04T00:00:00Z","author":"A2Agent Team","tags":["models","analysis"],"excerpt":"Mistral Large 4 is a 1.05T-parameter mixture-of-experts model with about 52B active parameters, a 1M-token context window and open weights released on October 29. Specs, benchmarks, the new $0.70 / $2.10 price, the license terms, and how it compares with the leading open models."},{"slug":"mistral-large-4-vs-kimi-k3-1-pro","title":"Mistral Large 4 vs Kimi K3.1 Pro: Performance, Coding, Speed and API Cost","date":"2026-11-04T00:00:00Z","author":"A2Agent Team","tags":["models","benchmarks"],"excerpt":"Kimi K3.1 Pro wins 28 of 32 shared benchmark boards against Mistral Large 4, but Mistral is about five times faster, three to five times cheaper per token, and already has open weights. A side-by-side look at intelligence, coding, context, speed and cost, and which model fits which job."},{"slug":"gemini-4-carbon","title":"Gemini 4 Carbon: Benchmarks, Pricing and What It Means for Developers","date":"2026-10-30T00:00:00Z","author":"A2Agent Team","tags":["models","benchmarks"],"excerpt":"Google released Gemini 4 Carbon on October 28: #1 on the Artificial Analysis Intelligence Index, 88.2% on SEC-bench Pro, and internal runs that last for days. Benchmarks against Argon, GPT-6 Astra and Claude Opus 5.5, pricing, who can use it now, and what it means for teams building agents."},{"slug":"gpt-6-1-terra-vs-kimi-k3-1-pro","title":"GPT-6.1 Terra vs Kimi K3.1 Pro: Benchmarks, Pricing and Which to Pick","date":"2026-10-28T00:00:00Z","author":"A2Agent Team","tags":["models","benchmarks"],"excerpt":"OpenAI's GPT-6.1 Terra and Moonshot's Kimi K3.1 Pro both launched in October 2026. We compare context, benchmarks, hallucination rates, price and integration, and explain which workloads suit each model."}]};</script></head>
+  <body>
+    <div id="app"><article><h1>Tencent Hy4 Benchmarks: What the Charts Actually Show</h1><p>A2Agent Team · 2026-11-04T00:00:00Z</p><div class="markdown-body"><p>Tencent released Hy4 on November 4, 2026, two months after the Hy4 preview it open-sourced in late August. The announcement calls it the strongest open-source Hy model yet and comes with a lot of charts. They show a big improvement on agent work over the preview. Among open models, Hy4 trades wins with Kimi K3.1 Pro, and on a few kinds of task it's still far behind the closed frontier.</p>
+<p>Plenty of developers were already using the preview. In the week through October 27, Hunyuan 4 preview was the fifth most-used model on OpenRouter, with 8.97 trillion tokens.</p>
+<h2>No parameter count this time</h2>
+<p>The Hy4 release post doesn't give a parameter count, an architecture or a context window. It says Hy4 &quot;substantially scales up both pre-training and post-training&quot; over the preview, adds image understanding, and supports computer use in both command-line and graphical environments for the first time.</p>
+<p>For reference, the preview was a 770B mixture-of-experts model with 49B active parameters per token and a 1M-token context window, released under Apache 2.0. Tencent hasn't said whether the final model keeps that design.</p>
+<h2>The headline chart</h2>
+<p><img src="/blog-assets/tencent-hy4-benchmarks-headline.jpg" alt="Hy4 against GLM 5.3, DeepSeek-V4.1-Flash-1017, Kimi K3.1 Pro, Claude Opus 5.5 and GPT 6.1 Sol across twelve benchmarks, including ProgramBench, FrontierCode 2.0, Terminal Bench 4.0, AutomationBench, E-Bench, OSWorld 2.1 and TenureTrail"></p>
+<p>The first chart compares Hy4 (the blue bar) with three open models, GLM 5.3, DeepSeek-V4.1-Flash-1017 and Kimi K3.1 Pro, and two closed ones, Claude Opus 5.5 and GPT 6.1 Sol, on twelve benchmarks. A dashed line inside the blue bar marks the preview's score.</p>
+<p>Against the other open models, Hy4 leads on six panels: ProgramBench, FrontierCode 2.0, 3DArena-Modeling, E-Bench 2.0, Hy-BrowseComp 2.0 and TenureTrail. Kimi K3.1 Pro beats it on the other six, and by a lot on some of them. On Terminal Bench 4.0 Kimi scores 66.8 to Hy4's 44.4, on AutomationBench 65.6 to 56.2, and on Terminal Bench Science 41.7 to 19.8. On Terminal Bench 4.0 and AutomationBench, Kimi has the highest bar in the whole chart, above Claude Opus 5.5.</p>
+<p>Against DeepSeek and GLM, Hy4 wins all twelve panels. So &quot;among the strongest open-source models&quot; is fair, with Kimi sharing the top spot.</p>
+<p>Benchmarks with an asterisk in this chart were run for the first time at release, so they have no preview score, and any claim of improvement has to come from the other rows.</p>
+<h2>Preview to release: where the gains are</h2>
+<p><img src="/blog-assets/tencent-hy4-benchmarks-appendix.jpg" alt="The Hy4 appendix benchmark table, with Hy4 preview, Hy4, GLM-5.3, DeepSeek-V4.1-Flash-1017, Kimi K3.1 Pro, GPT-6.1 Sol and Claude Opus 5.5 across agentic coding, search, working agent, STEM, research, computer use and multimodal benchmarks"></p>
+<p>The appendix table is the most useful part of the post, because it puts Hy4 next to its own preview. The biggest jumps are all in agent work:</p>
+<table>
+<thead>
+<tr>
+<th>Benchmark</th>
+<th>Hy4 preview</th>
+<th>Hy4</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WebCraftBench (internal)</td>
+<td>52.7</td>
+<td>78.9</td>
+<td>+26.2</td>
+</tr>
+<tr>
+<td>Hy-Backend 3.0 (internal)</td>
+<td>23.3</td>
+<td>45.1</td>
+<td>+21.8</td>
+</tr>
+<tr>
+<td>APEX-Agents v1.1 (pass@1)</td>
+<td>53.9</td>
+<td>75.2</td>
+<td>+21.3</td>
+</tr>
+<tr>
+<td>AutomationBench v1.0.6</td>
+<td>36.3</td>
+<td>56.2</td>
+<td>+19.9</td>
+</tr>
+<tr>
+<td>Terminal-Bench 4.0</td>
+<td>26.3</td>
+<td>44.4</td>
+<td>+18.1</td>
+</tr>
+<tr>
+<td>Hy-CompanyBench 2.0 (internal)</td>
+<td>62.4</td>
+<td>78.8</td>
+<td>+16.4</td>
+</tr>
+<tr>
+<td>Foundation Model Bench (internal)</td>
+<td>13.6</td>
+<td>28.1</td>
+<td>+14.5</td>
+</tr>
+<tr>
+<td>Hy-LifeSearch (internal)</td>
+<td>45.9</td>
+<td>60.2</td>
+<td>+14.3</td>
+</tr>
+<tr>
+<td>3DArena-Modeling (internal)</td>
+<td>23.4</td>
+<td>37.1</td>
+<td>+13.7</td>
+</tr>
+<tr>
+<td>HLE-Full (with tools)</td>
+<td>57.3</td>
+<td>59.1</td>
+<td>+1.8</td>
+</tr>
+</tbody>
+</table>
+<p>Building websites, writing backends, running automation and working in a terminal all require a model to plan, act and check its own work across many steps, and that's where most of the extra post-training went. Reasoning scores barely moved: Hy-FrontierMath T5 went from 7.8 to 13.0, and HLE from 57.3 to 59.1, though the preview's HLE score was measured on the text-only subset, so even that small change isn't a clean comparison. Tencent is selling Hy4 as a model that gets work done, and the numbers match that pitch.</p>
+<p>The vision rows have no preview column, because the preview couldn't see images. Hy4 scores 78.6 on MMMU-Pro and 55.4 on ZeroBench-main (with tools, pass@5). On Tencent's BuddyVQA Atlas it scores 81.0 with tools and 55.6 without. That 25-point gap suggests much of Hy4's visual skill comes from using tools to zoom, crop and look again, more than from reading the image in one pass.</p>
+<h2>The gap chart</h2>
+<p><img src="/blog-assets/tencent-hy4-benchmarks-frontier-gap.jpg" alt="Hy4 against the proprietary frontier on four internal benchmarks: Hy-FrontierMath T5 13.0 vs 97.5 for GPT 6.1 Sol and 91.3 for Claude Opus 5.5; Goal2Repo 23.2 vs 58.0 and 74.0; Foundation Model Bench 28.1 vs 41.3 and 55.4; BuddyVQA Atlas without tools 55.6 vs 72.0 and 75.3"></p>
+<p>Halfway through, Tencent publishes a chart where its own model looks small, which launch posts rarely do. On Hy-FrontierMath T5, Hy4 scores 13.0, GPT 6.1 Sol 97.5 and Claude Opus 5.5 91.3. On Goal2Repo, where an agent has to build a repository from a spec against a hidden test suite, Hy4 reaches 23.2 against Opus's 74.0. On BuddyVQA Atlas without tools it's 55.6 against 75.3.</p>
+<p>Tencent names four areas where the gap is concentrated: research-level math, long-horizon coding, a model improving other models, and hard visual question answering. If your workload falls in one of those, this chart matters more than the twelve-panel one above it. The other open models land in the same range: Kimi K3.1 Pro scores 14.8 on FrontierMath T5 and 21.0 on Goal2Repo, and DeepSeek 8.0 and 20.3.</p>
+<h2>Read the footnotes</h2>
+<p>The appendix notes say a lot about what each score is worth:</p>
+<ul>
+<li>Every model ran at its highest reasoning setting, so expect lower scores at default settings.</li>
+<li>GPT models ran in Codex and the others in Claude Code, at pinned versions. Each score measures a model and a harness together.</li>
+<li>Terminal-Bench 4.0 allowed up to 500 turns and a 13-hour timeout per trial, with 16 CPUs and 32 GB of RAM. Most production setups give an agent far less.</li>
+<li>SWE-Marathon used twice the official agent timeout, and each task was repeated until Tencent had eight valid scores from successful runs.</li>
+<li>Claude Opus 5.5 hit content filter blocks on 41 ProgramBench tasks, so its score there partly reflects refusals.</li>
+<li>Many competitor scores in the table are Tencent's own runs, marked with an asterisk, and some rows show both the vendor's number and Tencent's.</li>
+<li>About a third of the rows are Tencent's internal benchmarks, such as Hy-CompanyBench, E-Bench, TenureTrail and Goal2Repo, which no one outside Tencent can audit.</li>
+</ul>
+<p>The numbers are still useful, as long as you read them as upper bounds measured under generous conditions.</p>
+<h2>Results from real work</h2>
+<p>Some of the more convincing figures in the post aren't benchmarks:</p>
+<ul>
+<li>Finance: 213 finance professionals graded 579 real financial tasks. Hy4 scored 3.04, DeepSeek-V4.1-Flash-1017 2.97, and Kimi K3.1 Pro and GLM-5.3 tied at 2.68. The margin is small, but the graders are experts judging real work.</li>
+<li>Hallucination: down from 15.76% in the preview to 5.45%, with speculative errors down from 23.1% to 5.6%. For office and finance work that's the difference between a draft you check line by line and one you can spot-check.</li>
+<li>Games: up 19.1% on GameDev and 9.8% on GameLogic over the preview, with Tencent's game studio developers helping build the training data and tests.</li>
+<li>Third-party agents: Manus reports about 97% task completion on creating and editing documents. WorkBuddy reports an average score of 83.18 and a 96.15% pass rate, first among Chinese models in 9 of 12 scenarios.</li>
+</ul>
+<p>Expert grading and product data are harder to game than public leaderboards, and they're closer to what buyers want to know. They're also reported by Tencent and its partners.</p>
+<h2>Price</h2>
+<table>
+<thead>
+<tr>
+<th>Per 1M tokens</th>
+<th>Cached input</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hy4</td>
+<td>$0.042</td>
+<td>$0.834</td>
+<td>$2.501</td>
+</tr>
+</tbody>
+</table>
+<p>The price is the same as the preview's. Cached input costs about a twentieth of regular input, a discount built for agent workloads that resend the same long prompt, conversation or codebase on every step. Since the price didn't change and the scores went up a lot, Hy4 gives you much more per dollar than the preview did.</p>
+<p>For comparison, Hy4 sits between Mistral Large 4 ($0.70 / $2.10) and Kimi K3.1 Pro ($2.00 / $10.00) on list price. Tencent also says a cheaper, faster Hy4 Flash is coming.</p>
+<p>Hy4 is available through Tencent Cloud, OpenRouter, CodeBuddy, WorkBuddy, Yuanbao and ima. Tencent says it will open-source the weights with vLLM and SGLang support and publish a system card, but neither is out yet.</p>
+<h2>Safety</h2>
+<p>Tencent reports safety with numbers too. On its Hy-BioExperimentBench, Hy4 scores 30.4 out of 100 on open-ended experiment design, which Tencent says is well below its high-risk threshold. Its review of reasoning traces found the model knows biology but can't reliably turn that knowledge into usable lab protocols. Cyber training data was limited to defensive material such as proof-of-concept generation and patching, and red-team reviews with Tencent's Xuanwu Lab and Keen Security Lab found no higher offensive risk. Tencent sets its own threshold, but a published score still tells you more than calling the model &quot;safe&quot;.</p>
+<h2>What it adds up to</h2>
+<p>Hy4 does well across a wide range of agent work. It's ahead of DeepSeek and GLM on all twelve headline panels and roughly even with Kimi K3.1 Pro, which leads on terminal work and automation. The gains over the preview went into finishing long tasks and making fewer things up, while raw reasoning barely changed. Tencent's own gap chart shows how far open models still are from Claude Opus 5.5 and GPT 6.1 Sol on research math and repository-scale coding.</p>
+<p>Once the weights and system card are out, independent testers can check these numbers. Until then, run Hy4 against Kimi K3.1 Pro and DeepSeek V4.1 Flash on your own tasks before choosing.</p>
+<h2>Compare open models on A2Agent</h2>
+<p>A2Agent gives you DeepSeek, GLM, Kimi, MiniMax, Qwen and other models behind one API key, with OpenAI-compatible and Anthropic-compatible endpoints, so you can run the same tasks across them and compare cost per finished task. See the <a href="/models">Models</a> page for current availability and prices. New accounts get $5 in free credit.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://hy.tencent.ai/research/hy4?langVersion=en">Introducing Hy4</a> (Tencent Hy, November 4, 2026; all benchmark figures, evaluation notes, pricing and product results, and the three charts)</li>
+<li><a href="https://www.eesel.ai/blog/tencent-hy4">Tencent Hunyuan Hy4: specs, benchmarks, and pricing explained</a> (eesel AI, Hy4 preview specs)</li>
+<li><a href="https://openrouter.ai/rankings">LLM Rankings</a> (OpenRouter, week through October 27, 2026)</li>
+</ul>
+</div></article><nav><h2>Related articles</h2><ul><li><a href="/blog/mistral-large-4">Mistral Large 4: Specs, Benchmarks, Pricing and Open Weights</a></li><li><a href="/blog/mistral-large-4-vs-kimi-k3-1-pro">Mistral Large 4 vs Kimi K3.1 Pro: Performance, Coding, Speed and API Cost</a></li><li><a href="/blog/gemini-4-carbon">Gemini 4 Carbon: Benchmarks, Pricing and What It Means for Developers</a></li><li><a href="/blog/gpt-6-1-terra-vs-kimi-k3-1-pro">GPT-6.1 Terra vs Kimi K3.1 Pro: Benchmarks, Pricing and Which to Pick</a></li></ul></nav></div>
+  </body>
+</html>
